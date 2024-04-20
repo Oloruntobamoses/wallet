@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USDC Express</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Login/Register Section -->
+    <div id="login-register">
+      <h2>Welcome to USDC Express</h2>
+      <button id="social-login-google">Login with Google</button>
+      <button id="social-login-facebook">Login with Facebook</button>
+      <button id="social-login-twitter">Login with Twitter</button>
+      <input type="text" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button id="login">Login</button>
+      <button id="register">Register</button>
+    </div>
+    
+    <!-- Wallet Section -->
+    <div id="wallet" style="display: none;">
+      <h2>Welcome, <span id="username"></span>!</h2>
+      <p>Your USDC Wallet Address: <span id="wallet-address"></span></p>
+      <p>Balance: <span id="balance">0 USDC</span></p>
+      <input type="text" id="recipient-address" placeholder="Recipient's Wallet Address">
+      <input type="number" id="amount" placeholder="Amount">
+      <button id="send">Send USDC</button>
+      <button id="swap">Token Swap</button>
+      <button id="reset-password">Reset Password</button>
+      <button id="logout">Logout</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
